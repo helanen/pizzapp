@@ -4,18 +4,18 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App.js';
-import reducer from "./reducers/reducer.js";
+//import reducer from "./reducers/reducer.js";
 
-var store = createStore(reducer);
+/*var store = createStore(reducer);
 
 store.subscribe(() => {
     console.log(store.getState());
-});
+});*/
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+    //<Provider store={store}>
+        <App />,
+    //</Provider>,
 document.getElementById('root')
 );
 
