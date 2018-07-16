@@ -4,7 +4,7 @@ import TogglePizzeriaContainer from "../containers/TogglePizzeriaContainer.js";
 
 const Details = props => {
   var style = {
-    width: 160,
+    width: 180,
     height: 480,
     backgroundColor: "#9ca7ad",
     textAlign: "center"

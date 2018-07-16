@@ -1,5 +1,6 @@
 import React from "react";
 import OrderButtonContainer from "../containers/OrderButtonContainer.js";
+import {Button} from "reactstrap";
 
 const Menu = () => {
   var style = {
@@ -9,9 +10,10 @@ const Menu = () => {
     flexWrap: "wrap",
     width: 640,
     height: 480,
-    backgroundColor: "#99d9f7"
+    backgroundColor: "#99d9f7",
+    borderRight: "5px solid black"
   };
-  return (
+    return (
     <div style={style}>
       <OrderButtonContainer name="Burger" price={5} />
       <OrderButtonContainer name="Pizza" price={3} />

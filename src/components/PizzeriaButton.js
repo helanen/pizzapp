@@ -1,17 +1,21 @@
 import React from "react";
+import { Button } from "reactstrap";
 
 const PizzeriaButton = props => {
   var style = {
-    width: 160,
-    height: 80,
+    width: 145,
+    height: 70,
+    marginLeft: 5,
+    button: Button,
     border: props.selectedPizzeria === props.id ? "2px solid blue" : null,
     backgroundColor: props.pizzeriaStatusData[props.id] ? "red" : null
   };
+  
   return (
     <div>
-      <button onClick={() => props.onSelect(props.id)} style={style}>
+      <Button color="primary" onClick={() => props.onSelect(props.id)} style={style} >
         {props.name}
-      </button>
+      </Button>
     </div>
   );
 };

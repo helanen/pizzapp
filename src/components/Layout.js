@@ -1,5 +1,6 @@
 import React from "react";
 import PizzeriaButtonContainer from "../containers/PizzeriaButtonContainer.js";
+import { Button } from "reactstrap";
 
 const Layout = () => {
   var style = {
@@ -8,7 +9,8 @@ const Layout = () => {
     alignContent: "space-around",
     width: 160,
     height: 480,
-    backgroundColor: "yellow"
+    borderRight: "5px solid black",
+    backgroundColor: "#99d9f7"
   }; 
   return (
     <div style={style}>
