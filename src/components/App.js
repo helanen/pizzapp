@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from "react";
 import OverviewContainer from "../containers/OverviewContainer.js";
-import './App.css';
+import Body from "./Body.js";
 
 const App = () => {
-    return (
-      <div>
-        <OverviewContainer />
-      </div>
-    );
-  };
-
+  return (
+    <div>
+      <OverviewContainer />
+      <Body />
+    </div>
+  );
+};
 
 export default App;

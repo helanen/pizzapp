@@ -1,19 +1,23 @@
 import React from "react";
-import TableButtonContainer from "../containers/TableButtonContainer.js";
+import PizzeriaButtonContainer from "../containers/PizzeriaButtonContainer.js";
 
 const Layout = () => {
   var style = {
     display: "flex",
-    alignContent: "space-around",
-    justifyContent: "center",
     flexWrap: "wrap",
-    width: 640,
+    alignContent: "space-around",
+    width: 160,
     height: 480,
-    backgroundColor: "#aadff7"
-  };
+    backgroundColor: "yellow"
+  }; 
   return (
     <div style={style}>
-      Pizza goes here
+      <PizzeriaButtonContainer id={0} name="Henrin pizzeria 1" />
+      <PizzeriaButtonContainer id={1} name="Ollin pizzeria 1" />
+      <PizzeriaButtonContainer id={2} name="Henrin pizzeria 2" />
+      <PizzeriaButtonContainer id={3} name="Ollin pizzeria 2" />
+      <PizzeriaButtonContainer id={4} name="Henrin pizzeria 3" />
+      <PizzeriaButtonContainer id={5} name="Ollin pizzeria 3" />
     </div>
   );
 };

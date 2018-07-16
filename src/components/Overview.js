@@ -4,17 +4,17 @@ const Overview = props => {
   var style = {
     width: 960,
     height: 160,
-    backgroundColor: "#67bde5",
+    backgroundColor: "#58a9ce",
     textAlign: "center"
   };
-  var numTables = 0;
-  for (let i = 0; i < props.tableStatusData.length; i++) {
-    numTables += props.tableStatusData[i];
+  var numTables = 6;
+  for (let i = 0; i < props.pizzeriaStatusData.length; i++) {
+    numTables -= props.pizzeriaStatusData[i];
   }
   return (
     <div style={style}>
-      <h1>PizzApp</h1>
-      <h2>Pizzerias Available: {numTables} /16</h2>
+      <h1>Welcome to PizzApp</h1>
+      <h2>Pizzerias Available: {numTables}/6</h2>
     </div>
   );
 };
