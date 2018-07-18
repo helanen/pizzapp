@@ -6,7 +6,8 @@ const OrderButton = props => {
     width: 80,
     height: 80,
     margin: 10,
-    flexWrap: "flex"
+    flexWrap: "flex",
+    textAlign: "center"
   };
   return (
     <div>
